@@ -1,0 +1,389 @@
+@font-face {
+    font-family: "Fave";
+    src: url("../assets/font/FaveScript.woff");
+}
+
+@font-face {
+    font-family: "Myriad";
+    src: url("../assets/font/Myriad700.woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Myriad";
+    src: url("../assets/font/Myriad400.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Minion";
+    src: url("../assets/font/400.woff2");
+    font-weight: 400;
+}
+
+:root {
+    --color-main: #4996D2;
+    --color-secondary: #fff;
+    --color-text: #292929;
+    --color-background: #fff;
+
+    --weight-bold: 500;
+
+    --padding-base: 2rem;
+}
+/* html { */
+    /* font-family: 'Poppins', sans-serif;
+    font-weight: 300; */
+/* } */
+
+h1 {
+    color: var(--color-secondary);
+    font-family: 'Fave';
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+h2 {
+    color: var(--color-secondary);
+    font-family: 'Myriad';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.divider-top {
+    position:absolute;
+    z-index: 998;
+    bottom:0;
+}
+
+.divider-bottom {
+    position:absolute;
+    z-index: 998;
+    top:0;
+}
+
+.expander-video {
+    width: 100%;
+}
+
+.header {
+    position:relative;
+    background-image: url("../assets/HeaderBG.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: var(--padding-base); */
+  }
+
+.header .title {
+    margin-right: 10%;
+    margin-left: auto;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+
+
+.lead {
+    width: 40rem;
+    max-width: 100%;
+}
+
+.logo {
+    position: fixed;
+    width: 22%;
+    margin-left: 10%;
+    margin-right: auto;
+    z-index: 99999;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.slideText {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+}
+
+.slideText p {
+    font-family: "Myriad";
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.mySlides .title {
+    position: absolute;
+    top: 5rem;
+    display: flex;
+    left: 50%;
+    right: 50%;
+    text-align: center;
+    max-width: 80%;
+}
+
+.mySlides1 .title {
+    position: absolute;
+    top: 5rem;
+    display: flex;
+    left: 50%;
+    right: 50%;
+    text-align: center;
+    max-width: 80%;
+}
+
+.mySlides .title h2 {
+    line-height: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.mySlides1 .title h2 {
+    line-height: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.subheading {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1rem 0;
+}
+
+.my-custom-slider {
+    margin-top: 4rem;
+}
+.my-custom-slider .title {
+    margin: 1rem 0 .5rem;
+}
+
+.buttons-new {
+    width: 3.6rem;
+    height: 6.6rem;
+}
+
+.section-2 {
+    width: 100%;
+    background-image: url(../assets/bg2.jpg);
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  /* height: 100vh; */
+}
+
+.divider-top-2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Ensure the image takes the full width of the container */
+    max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+    /* transform: scaleX(-1); */
+}
+
+.section-3 {
+    position: relative;
+    height: 0;
+    z-index: 999;
+}
+
+.divider-bottom-2 {
+    position: absolute;
+    top: 0;
+    width: 100%; /* Ensure the image takes the full width of the container */
+    max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+    /* transform: scaleX(-1); */
+}
+
+.section-2-img {
+    margin-top: 16rem;
+    width: 100%;
+}
+
+.section-2-button {
+    display: flex;
+    justify-content: center;
+}
+
+/* .section-3 {
+    height: 0;
+    padding-bottom: 3.5rem;
+    background: url(https://www.chiemsee-chiemgau.info/typo3conf/ext/site_chiemgau/Resources/Public/dist/Atoms/Crossing/Images/crossing_down_ct_dark.svg);
+} */
+
+.section-4 {
+    /* background-color: #a6b3bd; */
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+.box-1 {
+    background-color: #4996D2;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 28rem;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.box-1 h3 {
+    margin-bottom: 1.5rem;
+    font-family: 'Myriad';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.box-1 p {
+    font-family: 'Minion';
+    font-size: 1.125rem;
+    color: #FFF;
+}
+
+.box-txt {
+    margin: 1rem;
+    /* position: absolute; */
+}
+
+.box-1 button {
+    bottom: 1rem;
+    position: absolute;
+    margin-left: 1rem;
+    font-family: 'Myriad';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #FFF;
+    padding: 0.9rem 0.7rem;
+}
+
+.divider-top-cta {
+    bottom: 0rem !important;
+}
+
+.cta-txt {
+    z-index: 99999;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+
+    .divider-top-cta {
+        bottom: 3rem !important;
+    }
+
+    .title-2 h1 {
+        font-size: 4.5rem;
+    }
+    
+
+    .prev-2 {
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
+    }
+
+    .next-2 {
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
+    }
+
+    .title-2 h2 {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .mySlides1 .title-2 {
+        top: 3rem !important;
+    }
+    
+
+    .box-1 {
+        width: 90%;
+        margin: 0;
+    }
+
+    .section-4 {
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .section-2-img {
+        margin-top: 22rem;
+        width: 100%;
+    }
+
+    .buttons-new {
+        width: 0.8rem;
+        height: 3.3rem;
+    
+    }
+
+    .header .cta {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 481px) {
+
+    .title-2 h1 {
+        font-size: 10rem;
+    }
+    
+    
+    h1 {
+        font-size: 7rem;
+        line-height: 6rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .expander-video {
+        width: 80%;
+    }
+    
+    .heading {
+        font-size: 3rem;
+    }
+
+    .slideText p {
+        font-size: 1.3rem;
+    }
+
+    .mySlides .title {
+        top: 17rem;
+    
+    }
+
+    .mySlides1 .title {
+        top: 13rem;
+    
+    }
+
+    .mySlides .title h2 {
+        line-height: 2rem;
+        margin-top: 2rem;
+    }
+
+    .mySlides1 .title h2 {
+        line-height: 2rem;
+        margin-top: 2rem;
+    }
+
+    .title {
+        padding: 3rem 0;
+    }
+
+}

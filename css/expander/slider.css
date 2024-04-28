@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 5rem;
+  width: auto;
+  padding: 16px;
+  /* margin-top: -50px; */
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  /* border-radius: 0 3px 3px 0; */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.mySlides {
+  position: relative;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  /* border-radius: 3px 0 0 3px; */
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev svg:hover,
+.next svg:hover {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.7));
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 481px) {
+  .prev, .next {
+    top: 12rem;
+  }
+
+  .prev-2, .next-2 {
+    top: 9rem !important;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .prev, .next {
+    top: 0rem;
+  }
+}
